@@ -5,7 +5,7 @@
 ```
 npm install vue-router
 ```
-#### Обучающий курс по tailwind
+#### Запуск роутера
 ```
 npm audit fix
 ```
