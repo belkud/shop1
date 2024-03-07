@@ -1,40 +1,108 @@
-# shop
 
-This template should help get you started developing with Vue 3 in Vite.
 
-## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
+#### Запуск роутера
+```
+npm install vue-router
+```
+#### Обучающий курс по tailwind
+```
+npm audit fix
 ```
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
+#### Установка tailwind
+```
+https://tailwindcss.ru/docs/guides/vite/#vue
+```
+#### Обучающий курс по tailwind
+```
+https://www.youtube.com/watch?v=fyK1sW1CNug
 ```
 
-### Type-Check, Compile and Minify for Production
+ 
 
-```sh
-npm run build
+
+<h3>Работа с VUE</h3>
+
+#### 1. Устанавливаем пакет
 ```
+npm init vue@latest
+ (npm init vite@latest <project-name> --template vue)???
+
+``` 
+
+#### 2. Выбираем VUE -> TypeScript 
+#### Пишем cd (название проекта) , npm install , npm run dev
+
+
+#### 3. Основные способы установки VUE (подробная инструкция)
+```
+https://v3.ru.vuejs.org/ru/guide/installation.html#%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B8
+```
+P.S. Если выскакивают ошибки при установке модулей
+```
+https://www.youtube.com/watch?v=vObwhyh5h5I&t=93s
+```
+
+---
+---
+
+<!-- #### P.S. Серверная часть находится в директории  -->
+<!-- #### Клиентская часть находится в директории  -->
+#### P.S. cd.. (название папки) - добавляет данную папку в директорию; cd - убирает последнюю папку в директории
+
+или:
+
+#### P.P.S. Для принудительного изменения директории: 
+#### 1. 'ctrl' + '<' 
+#### 2. в появившейся строке пишем 
+
+```
+Terminal.integrated.cwd
+```
+
+#### 3. пишем свою директорию 
+
+<!--!!!!!!!!!! C:\GitHub_folders\nodeServer-9>  -->
+---
+---
+
+
+ <h3>Работа с призмой </h3>
+ 
+[![](https://s18955.pcdn.co/wp-content/uploads/2018/02/github.png)](https://github.com/user/repository/subscription)
+
+#### 1. Инициализация призмы 
+```
+npm i
+``` 
+
+#### 2. Генерирует клиента Prisma на основе схемы 
+```
+npx prisma generate
+```
+ 
+
+#### 3. Синхронизирует состояние схемы Prisma с БД #### 
+```
+npx prisma db push
+``` 
+ 
+
+#### 4. Просмотр и управление данными через браузер
+```
+npx prisma studio
+```
+ 
+
+#### P.S. если нету файла .env, то обязательно его создать
+```
+DATABASE_URL="postgresql://postgres:(Пароль)@localhost:5432/(название таблицы)?schema=public"
+```
+ 
+#### P.P.S. чтобы не было ошибок в любом случае открываем pgAdmin и в нём если нету создаём одноимённую таблицу такую же как и в DATABASE_URL 
+---
+---
+  
+
+<!-- Котэ =^-^= (https://img.razrisyika.ru/kart/24/1200/94318-kot-saymon-4.jpg) -->

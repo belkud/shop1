@@ -9,10 +9,10 @@
 
 <script setup lang="ts">
 import { ref } from "vue"
-// import PostEntrance  from "./components/PostEntrance.vue"
+import PostEntrance  from "./components/PostEntrance.vue"
 import PostHeader from "./components/PostHeader.vue"
 import PostFooter from "./components/PostFooter.vue"
-// import PostAdvertisement from "./components/PostAdvertisement.vue"
+import PostAdvertisement from "./components/PostAdvertisement.vue"
 import { RouterView } from 'vue-router'
 // import PostForm from "./components/PostForm.vue";
 // import PostList from "@/components/PostList.vue";
