@@ -21,7 +21,7 @@
             <div v-if="count%2==0" class=" cursor-pointer hover:text-red-600">Войти &#128274;</div>
         </router-link>
 
-        <div v-if="count%2!=0" class=" cursor-pointer hover:text-red-600">В айти &#128275;</div>
+        <div v-if="count%2!=0" class=" cursor-pointer hover:text-red-600    -ml-[51px] mt-1">В айти &#128275;</div>
         <div class=" cursor-pointer hover:text-red-600">Служба поддержки &#128222</div>
     </div>
 
