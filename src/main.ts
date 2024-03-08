@@ -10,6 +10,11 @@ const router = createRouter({
 		path: '/',
 		component:  () => import('./view/PostAdvertisement.vue')
 	},
+	{
+		name: 'Balance',
+		path: '/balance',
+		component:  () => import('./view/PostBalance.vue')
+	},
     {
 		name: 'Entrance',
 		path: '/entrance',

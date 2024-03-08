@@ -1,7 +1,6 @@
 <template>
   <div class="app">
     <post-header/>  
-    <!-- <post-advertisement/>   -->
     <RouterView />
     <post-footer/>  
     </div>
@@ -11,17 +10,18 @@
 import { ref } from "vue"
 import PostEntrance  from "./components/PostEntrance.vue"
 import PostHeader from "./components/PostHeader.vue"
+import PostBalance from "./view/PostBalance.vue"
 import PostFooter from "./components/PostFooter.vue"
 import PostAdvertisement from "./components/PostAdvertisement.vue"
 import { RouterView } from 'vue-router'
 // import PostForm from "./components/PostForm.vue";
 // import PostList from "@/components/PostList.vue";
 
-const massive = ref([
-  {number: 1, model: 'Samsung', price: 15000},
-  {number: 2, model: 'Huawei', price: 17000},
-  {number: 3, model: 'Realme', price: 13000},
-])
+// const massive = ref([
+//   {number: 1, model: 'Samsung', price: 15000},
+//   {number: 2, model: 'Huawei', price: 17000},
+//   {number: 3, model: 'Realme', price: 13000},
+// ])
 </script>
 
 <style>
