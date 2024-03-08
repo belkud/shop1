@@ -22,6 +22,22 @@ import { RouterView } from 'vue-router'
 //   {number: 2, model: 'Huawei', price: 17000},
 //   {number: 3, model: 'Realme', price: 13000},
 // ])
+
+import axios from 'axios';
+
+let data = ref()
+const getData  = async function () {
+    try {
+        const get = await axios.get('http://localhost:3001/api/telephones')
+        data.value = get.data
+        console.log(data.value);
+         
+    } catch (error) {
+        
+    }
+} 
+getData()
+
 </script>
 
 <style>
