@@ -10,6 +10,18 @@ const router = createRouter({
 		path: '/',
 		component:  () => import('./view/PostAdvertisement.vue')
 	},
+
+	// // !!!
+	// {
+	// 	name: 'telephones',
+	// 	path: '/telephones',
+	// 	component:  () => import('./component/PostTelephones.vue')
+	// },
+	{
+		name: 'basket',
+		path: '/basket',
+		component: ()=> import('./view/PostBasket.vue')
+	},
 	{
 		name: 'Balance',
 		path: '/balance',

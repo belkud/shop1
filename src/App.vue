@@ -1,6 +1,7 @@
 <template>
   <div class="app">
     <post-header/>  
+    <post-telephones/>
     <RouterView />
     <post-footer/>  
     </div>
@@ -13,6 +14,7 @@ import PostHeader from "./components/PostHeader.vue"
 import PostBalance from "./view/PostBalance.vue"
 import PostFooter from "./components/PostFooter.vue"
 import PostAdvertisement from "./components/PostAdvertisement.vue"
+// import PostTelephones from "./components/PostTelephones.vue"
 import { RouterView } from 'vue-router'
 // import PostForm from "./components/PostForm.vue";
 // import PostList from "@/components/PostList.vue";
@@ -33,7 +35,7 @@ const getData  = async function () {
         console.log(data.value);
          
     } catch (error) {
-        
+      console.log(error);
     }
 } 
 getData()
