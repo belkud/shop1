@@ -2,28 +2,36 @@
   <div class="app">
     <post-header/>  
     <RouterView />
+    <PostSearch :people="people"/>
     <post-footer/>  
     </div>
 </template>
 
 <script setup lang="ts">
+
 import { ref } from "vue"
-import PostEntrance  from "./components/PostEntrance.vue"
-import PostHeader from "./components/PostHeader.vue"
-import PostBalance from "./view/PostBalance.vue"
-import PostFooter from "./components/PostFooter.vue"
-import PostAdvertisement from "./components/PostAdvertisement.vue"
 import { RouterView } from 'vue-router'
+import PostHeader from "./components/PostHeader.vue"
+import PostFooter from "./components/PostFooter.vue"
+import axios from 'axios'
+
+// import PostBalance from "./view/PostBalance.vue"
+// import PostAdvertisement from "./components/PostAdvertisement.vue"
+// import PostEntrance  from "./components/PostEntrance.vue"
+// import PostTelephones from "./components/PostTelephones.vue"
+// import PostSearch from "./view/PostSearch.vue"
+
 // import PostForm from "./components/PostForm.vue";
 // import PostList from "@/components/PostList.vue";
 
-// const massive = ref([
-//   {number: 1, model: 'Samsung', price: 15000},
-//   {number: 2, model: 'Huawei', price: 17000},
-//   {number: 3, model: 'Realme', price: 13000},
-// ])
+const people = ref([
+  {number: 1, model: 'Samsung', price: 15000},
+  {number: 2, model: 'Huawei', price: 17000},
+  {number: 3, model: 'Realme', price: 13000},
+])
 
-import axios from 'axios';
+
+
 
 let data = ref()
 const getData  = async function () {
@@ -33,7 +41,7 @@ const getData  = async function () {
         console.log(data.value);
          
     } catch (error) {
-        
+      console.log(error);
     }
 } 
 getData()
@@ -63,4 +71,4 @@ getData()
  
 
 
-
+  

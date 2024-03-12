@@ -13,7 +13,7 @@ const getData  = async function () {
         console.log(data.value);
          
     } catch (error) {
-        
+        console.log(error);
     }
 } 
 getData()

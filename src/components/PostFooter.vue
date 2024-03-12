@@ -17,6 +17,7 @@
             <div class=" cursor-pointer hover:text-red-600">Другое</div>
         </div>
 
+        
     </footer>
 </template>
 

@@ -20,7 +20,7 @@
             <div>Почта: {{ user.mail }}</div>
         <div>Пароль: {{ user.password }} </div>
     </div>
-<button class="btn" @click="deleteUser(index)">Удалить</button>
+<!-- <button class="btn" @click="deleteUser(index)">Удалить</button> -->
 </div>
 </template>
 
@@ -56,13 +56,13 @@
                     this.error = 'Вы ввели неверные данные'
                 }
 
-                this.users.push({
-                    name: this.name,
-                    mail: this.mail,
-                    password: this.password,
-                    // number: this.number
+                // this.users.push({
+                //     name: this.name,
+                //     mail: this.mail,
+                //     password: this.password,
+                //     // number: this.number
                     
-                })
+                // })
                 this.name=''
                 this.mail=''
                 this.password=''
@@ -70,10 +70,10 @@
                 // this.$emit('sendInfo', {...this.user});
                 // console.log(this.number)
             },
-            deleteUser () {
+            // deleteUser () {
                 
-                this.users.splice(0,1)
-            }
+            //     this.users.splice(0,1)
+            // }
         }
     }
 
