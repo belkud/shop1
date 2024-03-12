@@ -3,6 +3,7 @@
     <footer>
         <div class="flex bg-slate-800 mt-8 px-24 py-3 gap-24">
             <!-- <div class=" cursor-pointer hover:text-red-600">Работа</div> -->
+            {{ commonStore.text }}
             <div class=" cursor-pointer hover:text-red-600">Офис</div>
             <div class=" cursor-pointer hover:text-red-600">Вакансии</div>
             <div class=" cursor-pointer hover:text-red-600">IT</div>
@@ -20,7 +21,8 @@
 </template>
 
 <script setup lang="ts">
-
+import {useCommon} from './../stores/useCommon'
+const commonStore = useCommon()
 </script>
 
 <style>

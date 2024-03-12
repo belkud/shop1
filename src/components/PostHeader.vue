@@ -8,7 +8,8 @@
             <div class=" cursor-pointer hover:text-red-600" @click="conFunc">Каталог &#128366;</div>
         </router-link>
 
-        <input placeholder="&#128269; Поиск по сайту" class=" border border-cyan-600 rounded-sm w-2/5 px-3 bg-gray-800"  >
+        {{ commonStore.text }}
+        <input placeholder="&#128269; Поиск по сайту" v-model="commonStore.text" class=" border border-cyan-600 rounded-sm w-2/5 px-3 bg-gray-800"  >
             <div class=" cursor-pointer hover:text-red-600">Заказы 	&#128504;</div>
         <div class=" cursor-pointer hover:text-red-600">Избранное &#9829;</div>
         <div class=" cursor-pointer hover:text-red-600">Корзина &#128722</div>
@@ -27,6 +28,11 @@
 
     
 </template>
+
+<script setup lang="ts">
+import { useCommon } from './../stores/useCommon';
+const commonStore = useCommon()
+</script>
 
 <script lang="ts">
 
