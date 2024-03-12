@@ -2,14 +2,18 @@
 
 
 <template>
-    <div class=" flex pl-8  gap-12 mt-5 w-full">
+    <div class=" flex pl-8  gap-16 mt-5 w-full">
         
         <router-link to="/">
             <div class=" cursor-pointer hover:text-red-600" @click="conFunc">Каталог &#128366;</div>
         </router-link>
 
-        <input placeholder="&#128269; Поиск по сайту" class=" border border-cyan-600 rounded-sm w-2/5 px-3 bg-gray-800"  >
-            <div class=" cursor-pointer hover:text-red-600">Заказы 	&#128504;</div>
+        <router-link to="/search">
+            <input v-model="infos"  placeholder="&#128269; Поиск по сайту" class=" border border-cyan-600 rounded-sm w-[450px] px-3 bg-gray-800 "  >
+            <div>{{ infos }}</div>
+        </router-link>
+            
+        <div class=" cursor-pointer hover:text-red-600">Заказы 	&#128504;</div>
         <div class=" cursor-pointer hover:text-red-600">Избранное &#9829;</div>
         
         <router-link to="/basket">
@@ -40,7 +44,8 @@
 export default {
     data(){
         return {
-            count:0
+            count:0,
+            infos:''
 
         }
     }, methods: {

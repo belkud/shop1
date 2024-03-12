@@ -1,7 +1,9 @@
 <template>
     <div class="  text-center w-[300px] mt-[21%] m-auto text-teal-600">
-        <div>
-            Ваша корзина пуста
+        <!-- <PostSearch/>  -->
+        <PostSearch @test="handleTest"/> 
+       <div>
+            Ваша корзина пуста  
         </div>
         <div>
             <a href="http://localhost:5173/entrance">Войти в личный кабинет?</a>
@@ -9,8 +11,21 @@
     </div>
 </template>
 
-<script setup lang="ts">
+<script lang="ts">
+import PostSearch from './PostSearch.vue';
 
+    export default {
+        components:{PostSearch},
+        data() {
+            return {
+            }
+        },
+        methods:{
+
+        }
+    }
+
+    
 </script>
 
 <style>
