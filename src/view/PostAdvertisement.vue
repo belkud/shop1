@@ -2,7 +2,7 @@
     <template v-for="item,index of data" :key="index">
         <div>
            <div style="color: aliceblue;">brand : {{ item.brand_name }} </div>
-           <div style="color: aquamarine;">model : {{ item.model }}</div><br>
+           <div style="color:chocolate;">model : {{ item.model }}</div><br>
         </div>
     </template>
     
