@@ -1,5 +1,12 @@
 <template>
-    {{ data  }}
+    <template v-for="item,index of data" :key="index">
+        <div>
+           <div style="color: aliceblue;">brand : {{ item.brand_name }} </div><br>
+           <div style="color: aquamarine;">model : {{ item.model }}</div>
+        </div>
+    </template>
+    
+    <!-- {{ data  }} -->
     <PostTelephones></PostTelephones>
     <!-- <img src="../public/advertisement.webp" class=" w-2/3 m-auto mt-28 cursor-pointer hover:opacity-50 transition-opacity border rounded-xl" alt="" srcset=""> -->
     <img src="../public/advertisement2.webp" class=" w-2/3 m-auto mt-20 cursor-pointer hover:opacity-50 transition-opacity border rounded-xl" alt="" srcset="">

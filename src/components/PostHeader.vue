@@ -8,7 +8,7 @@
             <div class=" cursor-pointer hover:text-red-600" @click="conFunc">Каталог &#128366;</div>
         </router-link>
 
-        {{ commonStore.text }}
+   
         <input placeholder="&#128269; Поиск по сайту" v-model="commonStore.text" class=" border border-cyan-600 rounded-sm w-2/5 px-3 bg-gray-800"  >
             <div class=" cursor-pointer hover:text-red-600">Заказы 	&#128504;</div>
         <div class=" cursor-pointer hover:text-red-600">Избранное &#9829;</div>
@@ -38,7 +38,7 @@
 
 <script setup lang="ts">
 import { useCommon } from './../stores/useCommon';
-const commonStore = useCommon()
+const commonStore = useCommon() as any
 </script>
 
 <script lang="ts">
@@ -56,6 +56,8 @@ export default {
         }
     }
 }
+// commonStore.style.background=='lightgray'
+
 </script>
 
 <style>
